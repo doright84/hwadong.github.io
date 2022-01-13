@@ -72,65 +72,29 @@ body {
     display: block;
 }
 
-/* 안내창 */
-.modal {
+.gotop {
     position: fixed;
-    left: 0;
-    top: 0;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 9999;
-}
-
-.modal-cont {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
+    right: 80px;
+    bottom: 80px;
     display: block;
-    width: 500px;
-    height: 250px;
-    background: #fff;
-    border-radius: 20px;
-    padding: 50px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.modal-cont>span {
-    position: relative;
-    display: block;
-    font-weight: 300;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.modal-cont>span>b {
-    font-weight: 600;
-}
-
-.modal-cont button {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
+    width: 50px;
     height: 50px;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.modal-cont button>img {
-    position: relative;
-    display: inline-block;
-    line-height: 50px;
-    width: 20px;
-    height: 20px;
+    box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.3);
+    border-radius: 50px;
     cursor: pointer;
+    overflow: hidden;
+    z-index: 999;
 }
-
+.gotop-img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url('../images/top_img.jpg')center no-repeat;
+    transition: background 0.3s;
+}
+.gotop-img:hover {
+    background: url('../images/top_hover_img.jpg')center no-repeat;
+}
 /* header */
 .header {
     position: relative;
@@ -325,7 +289,8 @@ body {
     height: 635px;
     padding-top: 60px;
 }
-.move-char>img{
+
+.move-char>img {
     position: absolute;
     display: block;
 }
@@ -356,6 +321,7 @@ body {
         margin-top: 15px;
     }
 }
+
 @keyframes ani-right {
     0% {
         margin-right: 0;
@@ -365,6 +331,7 @@ body {
         margin-right: 5px;
     }
 }
+
 .move-cloud {
     display: block;
 }
@@ -411,6 +378,7 @@ body {
         margin-top: 8px;
     }
 }
+
 /* footer */
 .footer {
     position: relative;
