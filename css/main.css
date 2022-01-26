@@ -240,7 +240,7 @@ body {
     position: relative;
     display: block;
     height: 750px;
-    margin-bottom: 160px;
+    margin-bottom: 200px;
 }
 
 .char-tit {
@@ -378,7 +378,15 @@ body {
         margin-top: 8px;
     }
 }
-
+/* mockup */
+.mockup{
+    position: relative;
+    display: block;
+    margin: 150px 0 50px 0;
+}
+.mockup-cont{
+    padding: 80px 130px;
+}
 /* footer */
 .footer {
     position: relative;
